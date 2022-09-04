@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fitness Club</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/bmi.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="heading1">
+                <a class="logo" href="index.html"><img src="images/gym.PNG" alt="logo"></a>
+                <h1>Premium Fitness Club</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="g_nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="membership.html">BUY MEMBERSHIP</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main id="bmi">
+            <div id="calculation">
+                <h3>Calculate your BMI</h3>
+
+                <div id="form">
+                    <label for="weight">Weight:</label>
+                    <input type="text" name="weight" id="weight" placeholder="in kg">
+                    <hr>
+                    <label for="height">Height:</label>
+                    <input type="text" name="height" id="height" placeholder="in meter">
+                    <input id="inputcm" type="number" placeholder="CM" oninput="$(this).LengthConverter(value)" onchange="$(this).LengthConverter(value)">
+                    <hr>
+                    <input type="button" id="calculate" value="Calculate">
+                    <input type="button" id="clear" value="Clear">
+                </div>
+            </div>
+            <div class="bmi_result"></div>
+        </main>
+        <footer>
+            <div class="foot-info">
+                <div class="flex-layout">
+                    <div>
+                        <p>
+                            <strong>Contact</strong><br>333-555-4488<br> Copyright &copy; 2021 Premium Fitness Club<br>
+                            <a href="mailto : premium@fitnessclub">Premium@fitnessclub.com</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p> <strong>Legel</strong><br>Terms &amp;Conditions <br>Privacy Policy</p>
+                    </div>
+
+                    <div class="social">
+                        <p><strong>Lets Get Social</strong></p>
+                        <div class="soc_img">
+                            <a href="https://www.instagram.com/" target="new"><img src="images/insta.png" alt="Logo"></a>
+                            <a href="https://www.facebook.com/" target="new"><img src="images/fb.png" alt="Logo"></a>
+                            <a href="https://twitter.com/?lang=en" target="new"><img src="images/twitter.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+
+            <div>
+                <p class="foot-tm">TM &amp; Copyright 2021 Premium Fitness Club. All Rights Reserved.</p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
